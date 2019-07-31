@@ -12,12 +12,12 @@ class HelloWorld extends React.Component {
     render() {
         return (
             <div>
-                <p>{this.state}</p>
-                <button onClick={function() {this.setState({hello: 'Hello world!'})}}>World</button>
-                <button onClick={function() {this.setState({hello: 'Hello React!'})}}>React</button>
-                <button onClick={function() {this.setState({hello: 'Hello friend!'})}}>Friend</button>
+                <p>{this.state.hello}</p>
+                <button onClick={() => {this.setState({hello: 'Hello world!'})}}>World</button>
+                <button onClick={() => {this.setState({hello: 'Hello React!'})}}>React</button>
+                <button onClick={() => {this.setState({hello: 'Hello friend!'})}}>Friend</button>
             </div>
-        )
+        );
     }
 }
 
